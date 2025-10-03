@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <head>
-    <title>Tetr.io</title>
+    <title>Tetr.io Hub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Inicio de la página -->
     <header>
-        <h1 id="tituloInicial"><b>TETR.IO</b></h1>
-        <figure style="text-align: center;">
-            <a href="https://tetr.io"><img src="https://txt.osk.sh/branding/tetrio-3d.png" alt="Logo de Tetr.io" width="350"></a>
+        <figure id="logo">
+            <a href="https://tetr.io"><img src="imgs/logo.png" alt="Logo de Tetr.io" width="450"></a>
             <figcaption><i>¡Haz click en el logo para redirigirte a la página oficial del juego!</i></figcaption>
         </figure>
         <p>TETR.IO es un juego multijugador y de un solo jugador gratuito desarrollado por OSK. 
             Se puede jugar contra amigos y adversarios de todo el mundo y conseguir un 
             puesto en las tablas de clasificación, que se encuentran en el TETRA CHANNEL.<br> 
-            Se describe como un «juego de apilar online gratuito del <b>mismo género que Tetris».</b></p>
+            Se describe como un «juego de apilar online gratuito del <strong>mismo género que Tetris».</strong></p>
 
         <!-- Índice de la página -->
         <hr>
         <h2>Índice</h2>
         <nav>
-            <ul>
-                <li><a href="#tituloInicial">Presentación general de Tetr.io</a></li>
-            </ul>
             <details>
-                <summary>Maneras de jugarlo</summary>
-                    <ul>
-                        <li><a href="#h3multijugador">Multijugador</a></li>
+                <summary><a href="#tituloInicial">Presentación general de Tetr.io</a></summary>
+            </details>
+            <details>
+                <summary><a href="#h2formasJuego">Maneras de jugarlo</summary>
+                    <details>
+                        <summary><a href="#h3multijugador">Multijugador</a></summary>
                         <ul>
                             <li><a href="#h4quickPlay">QUICK PLAY</a></li>
                             <li><a href="#h4tetraLeague">TETRA LEAGUE</a></li>
                             <li><a href="#h4salasPersonales">Salas personalizadas</a></li>
-                    </ul>
-                    <li><a href="#h3unJugador">Un solo jugador</a></li>
-                    <ul>
-                        <li><a href="#h440Lines">40 LINES</a></li>
-                        <li><a href="#h4Blitz">BLITZ</a></li>
-                        <li><a href="#h4Zen">ZEN</a></li>
-                        <li><a href="#h4Custom">CUSTOM</a></li>
-                    </ul>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary><a href="#h3unJugador">Un solo jugador</a></summary>
+                        <ul>
+                            <li><a href="#h440Lines">40 LINES</a></li>
+                            <li><a href="#h4Blitz">BLITZ</a></li>
+                            <li><a href="#h4Zen">ZEN</a></li>
+                            <li><a href="#h4Custom">CUSTOM</a></li>
+                        </ul>
+                    </details>
             </details>
-            <ul>
-                <li><a href="#h2tetraChannel">TETRA CHANNEL</a></li>
-            </ul>
+            <details>
+                <summary><a href="#h2tetraChannel">TETRA CHANNEL</a></summary>
+            </details>
+            <details>
+                <summary><a href="registro.html">Registrate a nuestro página</a></summary>
+            </details>
         </nav>
     </header>
 
@@ -54,18 +60,18 @@
         <h3 id="h3multijugador">Multijugador</h3>
         <figure>
             <img src="imgs/Multijugador.jpg" 
-                alt="Captura de multijugador en TETR.IO" width="500" style="display: block; margin: auto;">
+                alt="Captura de multijugador en TETR.IO" width="500" class="bordeada">
         </figure>
 
         <article>   
         <!-- Subsección de nivel 4 -->
             <h4 id="h4quickPlay">QUICK PLAY</h4>
             <p>QUICK PLAY es la sala principal de todos contra todos en TETR.IO cuyo objetivo es 
-                ofrecer una <b>experiencia informal y sin clasificación</b>, y que se renovó recientemente. <br>
+                ofrecer una <strong>experiencia informal y sin clasificación</strong>, y que se renovó recientemente. <br>
                 El objetivo de este modo es subir lo más alto posible (piso por piso) y luchar en una gran 
                 sala de todos contra todos. Al ser eliminados, se puede comenzar rápidamente una nueva partida 
-                sin esperar a que termine el juego. Cuenta con <b>dos tablas de clasificación</b> que se reinician 
-                semanalmente: <b>Juego rápido y Juego rápido experto.</b></p>
+                sin esperar a que termine el juego. Cuenta con <b>dos tablas de clasificación</strong> que se reinician 
+                semanalmente: <strong>Juego rápido y Juego rápido experto.</strong></p>
         </article>    
 
         <article>
@@ -75,7 +81,7 @@
                 jugadores juegan partidas hasta alcanzar un número determinado de victorias. <br>
                 Este número es 3, 5 o 7 basándose en el rango más alto de los dos jugadores.</p>
                 <figure>
-                    <table border="1" style="text-align: center; margin: auto;">
+                    <table border="2" style="text-align: center; margin: auto;">
                         <th colspan="4">Rangos en TETRA LEAGUE</th>
                         <tr>
                             <td><img src="https://i.namu.wiki/i/8voxZHFNP4JHlAU6fRautVuwwtuV8u9aDAOUIQhFoM9vJnrAXcFtEABTd3IgU2L2G8VVfdRGMJ7Dc5i-V7qhAf-CTplcSjKiuM1j1tRMHDkLthDnS44nyT-fPFtXTjRwI8dsaEiqy1NNYo_rGc41YTsgWbT1rOTCoBWxTnk72iA.webp" 
@@ -139,7 +145,7 @@
         <h3 id="h3unJugador">Un solo jugador</h3>
         <figure>
             <img src="imgs/Un solo jugador.jpg" 
-                alt="Captura del modo solo en TETR.IO" width="500" style="display: block; margin: auto;">
+                alt="Captura del modo solo en TETR.IO" width="500" class="bordeada">
         </figure>
 
         <article>    
@@ -193,7 +199,7 @@
             a lo largo del juego. Las tablas de clasificación también tienen un límite de cien jugadores.</p>
         <figure>
             <img src="imgs/Tetra League.jpg" 
-                alt="Captura de multijugador en TETR.IO" width="500" style="display: block; margin: auto;">
+                alt="Captura de multijugador en TETR.IO" width="500" class="bordeada">
         </figure>
     </section>
     

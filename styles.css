@@ -1,0 +1,48 @@
+/*Agregamos los rasgos a body*/
+body {
+  background-color: #181726;
+  color: white;    
+  font-size: 20px; 
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+/*Agregamos los rasgos del id "logo"*/
+#logo {
+  text-align: center;
+  background-color: #111;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/*Agregamos rasgos a "article"*/
+article {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+/*Agregamos rasgos a "img"*/
+.bordeada {
+  border: 5px dotted #fff;
+}
+
+/*Agregamos rasgos a "figure"*/
+figure {
+  text-align: center;
+}
+
+/*Agregamos un color a "strong"*/
+strong {
+  color: #d894ff;
+}
+
+/*Agregamos rasgos a footer*/
+footer {
+  text-align: center;
+}
+
+/*Agregamos rasgos a "button"*/
+button {
+  background-color: #d894ff;
+}
