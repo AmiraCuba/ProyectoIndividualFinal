@@ -46,3 +46,29 @@ footer {
 button {
   background-color: #d894ff;
 }
+
+/* Agregamos rasgos a los descendientes directos de los "article"*/
+article > p::first-letter {
+  font-size: 25px;
+  color: rgba(245, 132, 255, 0.959); 
+  font-weight: 1000;
+}
+
+/* Agregamos rasgos a los "h1" después de "article"*/
+article > h4 {
+  background: linear-gradient(90deg, #0ee3ff, #6523ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Agregamos rasgos a los links en la página */
+a:link { 
+  color: blue; 
+}
+a:visited { 
+  color: purple; 
+}
+a:hover { 
+  color: red; 
+}
