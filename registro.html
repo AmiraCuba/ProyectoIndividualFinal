@@ -20,62 +20,169 @@
                 <li><a href="registro.html">Regístrate</a></li>
             </ul>
         </nav> 
-        <h1>Formulario para registro en Tetr.io Hub</h1>
     </header>
-
     <!-- Creamos el formulario de registro -->
-    <form action="#" method="post">
-        <fieldset class="bordeada">
-            <!-- Creamos el campo de registro de nombre -->
-            <label for="usuario">Usuario de Tetr.io:</label>
-            <input type="text" id="usuario" name="usuario" placeholder="Escribe tu usuario" required>
-            <br><br>
-
-            <!-- Creamos el campo para la contraseña -->
-            <label for="clave">Contraseña:</label>
-            <input type="password" id="clave" name="clave" pattern=".{6,12}" placeholder="Ingrese contraseña">
-            <br><br>
-
-            <!-- Creamos el campo para validar la contraseña -->
-            <label for="confirmarClave">Confirmar contraseña:</label>
-            <input type="password" id="confirmarClave" name="confirmarClave" pattern=".{6,12}" placeholder="Ingrese contraseña de nuevo">
-            <br><br>
-
-            <!-- Creamos el campo de registro de gmail -->
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" placeholder="Escribe tu gmail" required>
-            <br><br>
-
-            <!-- Creamos el selector de modalidad -->
-            <label id="nivel">Seleccionar nivel de conocimiento:</label>
-            <input type="radio" id="principiante" name="nivel" value="principiante">
-            <label>Principiante</label>
-            <input type="radio" id="intermedio" name="nivel" value="intermedio">
-            <label>Intermedio</label>
-            <input type="radio" id="avanzado" name="nivel" value="avanzado">
-            <label>Avanzado</label>
-            <br><br>
-
-            <!-- Creamos el selector de gustos de Tetr.io -->
-            <p id="horarios">Lo que me gusta de Tetr.io es:</p>
-            <label>
-            <input type="checkbox" name="gustos[]" value="tipoJuego">
-            Juego en Línea y Multijugador</label><br>
-            <label><input type="checkbox" name="gustos[]" value="gratuito">
-            Gratuito y Accesible</label><br>
-            <label><input type="checkbox" name="gustos[]" value="tetris">
-            Basado en Tetris</label><br>
-            <br><br>
-
-            <!-- Creamos la sección para colocar comentario -->
-            <label for="comentario">Danos un comentario para mejorar nuestra página :D</label>
-            <textarea id="comentario" name="comentario"></textarea>
-            <br><br>
-
+    <form action="#" method="post" class="contenedor">
+        <h1>Formulario para registro en Tetr.io Hub</h1>
+        <section class="forms">
+            <div class="forms_item">
+                <h2>Información personal</h2>
+                <hr>
+            </div>
+            <div class="forms_item">
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Escribe tu usuario" required>
+            </div>
+            <div class="forms_item">
+                <label for="usuario">Usuario de Tetr.io:</label>
+                <input type="text" id="usuarioTetrio" name="usuarioTetrio" placeholder="Escribe tu usuario de TETR.IO">
+            </div>
+            <div class="forms_item">
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave" pattern=".{6,12}" placeholder="Ingrese contraseña" required>
+            </div>
+            <div class="forms_item">
+                <label for="confirmarClave">Confirmar contraseña:</label>
+                <input type="password" id="confirmarClave" name="confirmarClave" pattern=".{6,12}" placeholder="Ingrese contraseña de nuevo" required>
+            </div>
+            <div class="forms_item">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Escribe tu gmail" required>
+            </div>
+            <div class="forms_item">
+                <label for="pais">Selecciona tu país:</label>
+                <select id="pais" name="pais">
+                    <option>Selecciona tu país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="canada">Canadá</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="costa_rica">Costa Rica</option>
+                    <option value="cuba">Cuba</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="el_salvador">El Salvador</option>
+                    <option value="españa">España</option>
+                    <option value="estados_unidos">Estados Unidos</option>
+                    <option value="guatemala">Guatemala</option>
+                    <option value="honduras">Honduras</option>
+                    <option value="mexico">México</option>
+                    <option value="nicaragua">Nicaragua</option>
+                    <option value="panama">Panamá</option>
+                    <option value="paraguay">Paraguay</option>
+                    <option value="peru">Perú</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="venezuela">Venezuela</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+        </section>
+        <section class="forms">
+            <div class="forms_item">
+                <h2>Experiencia en TETR.IO</h2>
+                <hr>
+            </div>
+            <div class="forms_item">
+                <label for="nivel">Nivel de experiencia:</label>
+                <select id="nivel" name="nivel">
+                    <option>Selecciona tu nivel</option>
+                    <option value="principiante">Principiante (menos de 6 meses)</option>
+                    <option value="intermedio">Intermedio (6 meses - 2 años)</option>
+                    <option value="avanzado">Avanzado (2 - 4 años)</option>
+                    <option value="experto">Experto (5 años a más)</option>
+                </select>
+            </div>
+            <div class="forms_item">
+                <label for="rango">Rango actual:</label>
+                <select id="rango" name="rango">
+                    <option value="sinRango">Sin rango</option>
+                    <option value="d">D</option>
+                    <option value="d+">D+</option>
+                    <option value="c-">C-</option>
+                    <option value="c">C</option>
+                    <option value="c+">C+</option>
+                    <option value="b-">B-</option>
+                    <option value="b">B</option>
+                    <option value="b+">B+</option>
+                    <option value="a-">A-</option>
+                    <option value="a">A</option>
+                    <option value="a+">A+</option>
+                    <option value="s-">S-</option>
+                    <option value="s">S</option>
+                    <option value="s+">S+</option>
+                    <option value="ss">SS</option>
+                    <option value="u">U</option>
+                    <option value="x">X</option>
+                </select>
+            </div>
+            <div class="forms_item">
+                <label for="pps">PPS Promedio (piezas por segundo):</label>
+                <input type="number" id="pps" name="pps" placeholder="Selecciona un número" min="0.0" max="10.00" step="0.5">
+            </div>
+            <div class="forms_item">
+                <label for="tiempojuego">Tiempo de juego semanal</label>
+                <input type="range" id="tiempojuego" name="tiempojuego" min="0" max="40" value="10">
+                <div id="playtime-value"># horas</div> <!-- JavaScript trabajo  -->
+            </div>
+            </section>
+            <section class="forms">
+                <div class="forms_item">
+                    <h2>Preferencias de juego</h2>
+                    <hr>
+                </div>
+                <div class="forms_item">
+                    <label for="modos[]">Modos de juego favoritos (Selecciona todos los que apliquen)</label><br>
+                    <label><input type="checkbox" name="modos[]" value="tetra">
+                    Tetra League (Competitivo)</label><br>
+                    <label><input type="checkbox" name="modos[]" value="quick">
+                    Quick Play</label><br>
+                    <label><input type="checkbox" name="modos[]" value="40lines">
+                    40 Lines</label><br>
+                    <label><input type="checkbox" name="modos[]" value="blitz">
+                    Blitz</label><br>
+                    <label><input type="checkbox" name="modos[]" value="zen">
+                    Zen mode</label>
+                </div>
+                <div class="forms_item">
+                    <p>¿Qué te interesa más de TETR.IO Hub?</p>
+                    <label><input type="radio" name="interes" value="guias">
+                    Guías y Tutoriales</label><br>
+                    <label><input type="radio" name="interes" value="comunidad">
+                    Comunidad y Discusiones</label><br>
+                    <label><input type="radio" name="interes" value="torneos">
+                    Torneos y Competencias</label><br>
+                    <label><input type="radio" name="interes" value="noticias">
+                    Noticias y Actualizaciones</label><br>
+                    <label><input type="radio" name="interes" value="estadisticas">
+                    Estadísticas y Análisis</label>
+                </div>
+            </section>
+            <section class="forms">
+                <div class="forms_item">
+                    <h2>Configuración</h2>
+                    <hr>
+                </div>
+                <div class="forms_item">
+                    <label><input type="checkbox" name="preferencias[]" value="news">
+                    Recibir newsletter con noticias y actualizaciones</label>
+                </div>
+                <div class="forms_item">
+                    <label><input type="checkbox" name="preferencias[]" value="notificaciones">
+                    Notificaciones de torneos</label>
+                </div>
+                <div class="forms_item">
+                    <label for="comentario">Danos un comentario para mejorar nuestra página :D</label>
+                    <textarea id="comentario" name="comentario"></textarea>
+                </div>
+            </section>
+            <section id="forms_importante">
+                <input type="checkbox" name="terminos" value="terminos" required>
+                <label>Acepto los términos y condiciones de <strong>TETR.IO Hub</strong>. Entiendo que mis datos serán utilizados únicamente para mejorar mi experiencia en la plataforma y no serán compartidos con terceros.</label>
+            </section>
             <!-- Creamos el botón para suscribirse y reestablecer -->
-            <button type="submit">Enviar</button>
-            <button type="submit">Resetear</button>
-        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="submit">Resetear</button>
     </form>
 </body>
 </html>
