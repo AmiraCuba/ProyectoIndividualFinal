@@ -36,32 +36,49 @@
 }
 
 /* Agregamos las rasgos a nav_botones */
+.nav_botones {
+  margin-top: -20px;
+  display: block;
+  padding: 20px 0;
+  z-index: 0;
+}
 .nav_botones ul {
-  display: inline-flex;
+  justify-content: center;
+  display: flex;
   list-style-type: none;
-  margin: 2%;
-  gap: 4%;
+  gap: 20px;
+  padding: 10px 20px;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #00ffff;
 }
 .nav_botones a {
-  color: #0ff;
-  background-color: rgba(0, 255, 255, 0.15);
-  border: 1px solid #0ff;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  white-space: nowrap;
-  display: flex;         
-  align-items: center;     
-  justify-content: center;
+    color: #0ff;
+    text-decoration: none;
+    background-color: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 8px;
+    font-family: TETRIO;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    padding: 12px 25px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
 }
 .nav_botones a:hover {
-  background-color: rgba(0, 255, 255, 0.35);
-  box-shadow: 
-    0 0 10px #0ff, 
-    0 0 20px #0ff,  
-    inset 0 0 10px #0ff;
-  transform: scale(1.05);
+    background-color: rgba(0, 255, 255, 0.2);
+    color: #ffffff;
+    border-color: #0ff;
+    box-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.6), 
+        0 0 20px rgba(0, 255, 255, 0.4), 
+        inset 0 0 5px rgba(0, 255, 255, 0.2);
+    transform: translateY(-3px);
 }
-
 
 .tituloPrincipal {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("imgs/Tetris\ fondo.png");
@@ -69,12 +86,15 @@
   text-align: center;
   padding: 10%;
 }
+.tituloPrincipal img {
+  width: 30rem;
+}
 h1 {
   font-family: TETRIO;
   text-transform: uppercase;
   font-size: 300%;
-  text-shadow: 0 0 25px rgba(185, 0, 255, 0.5);
-  color: rgb(185, 0, 255);
+  text-shadow: 0 0 25px #00ffff;
+  color: rgb(0, 255, 255);
 }
 h2 {
   text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
@@ -227,13 +247,19 @@ body {
 
 /*Agregamos rasgos a "article"*/
 article, form {
-  background-color: #49494934;
+  background-color: rgba(30, 33, 45, 0.6);;
   padding: 25px;
-  border: 2px solid #333;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
   border-radius: 15px;
   margin: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-
+article > p {
+  line-height: 1.6; /* Más espacio entre líneas facilita la lectura */
+  color: #c4c9d4; /* Un blanco no tan puro para no cansar la vista */
+  font-size: 1.4rem;
+}
 hr {
   box-shadow: 0 2px 20px rgba(0, 255, 255, 0.3);
   border-color: #00ffff;
@@ -257,9 +283,21 @@ strong {
 /*Agregamos rasgos a footer*/
 footer {
   text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
   background: rgba(10, 10, 10, 0.95);
-  border-top: 2px solid #00ffff;
-  margin: -5px;
+  border-top: 1px solid #00ffff;
+  box-shadow: 0 -5px 20px rgba(0, 255, 255, 0.1);
+  color: #888;
+  font-size: 0.9rem;
+}
+footer p {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+footer:hover p {
+  opacity: 1;
+  color: #0ff;
 }
 
 /*Agregamos rasgos a "button"*/
@@ -283,4 +321,125 @@ a {
   text-decoration: none; 
 }
 
-/* Agregamos la fuente de TETR.IO */
+/* Añadimos el css para los banners */
+.banner {
+  font-family: TETRIO;
+  background-color: #797979;
+  width: 900px;
+  padding: 1%;
+  margin: 1.5%;
+  align-items: center;
+  gap: 20px; 
+  border-radius: 4px;
+  transition: background-color 0.2s ease, transform 0.1s;
+  display: flex;
+  border: 5px outset #cccccc;
+  word-spacing: 5px;
+}
+.banner img {
+  width: 40%;
+  display: flex;
+}
+.banner h4 {
+  font-size: 2.8em;
+}
+#multijugador {
+  color: #f1bcdb;
+  background-color: #34222d;
+  border-color: #472d3d;
+}
+#quickPlay {
+  color: #ff9c6b;
+  background-color: #532314;
+  border-color: #b83a1b;
+}
+#tetraLeague {
+  color: #ffbbbb;
+  background-color: #4f1818;
+  border-color: #902d2d;
+}
+#salasPersonales {
+  color: #afc0e8;
+  background-color: #343946;
+  border-color: #49536b;
+}
+#roomListing {
+  color: #a7d0ce;
+  background-color: #3a4746;
+  border-color: #4e6c6a;
+}
+#royale {
+  color: #e6bcf1;
+  background-color: #39303b;
+  border-color: #524156;
+  margin-left: 5%;
+}
+#unJugador {
+  color: #bab8df;
+  background-color: #1e1d2d;
+  border-color: #2e2d42;
+}
+#FortyLines {
+  color: #ffba88;
+  background-color: #2a211b;
+  border-color: #643b1d;
+}
+#Blitz {
+  color: #ffdede;
+  background-color: #4a2222;
+  border-color: #803434;
+}
+#Zen {
+  color: #fdb9ff;
+  background-color: #331933;
+  border-color: #6b2b69;
+}
+#Custom {
+  color: #bab8df;
+  background-color: #1e1d2d;
+  border-color: #2e2d42;
+}
+#tetraChannel {
+  color: #88ff99;
+  background-color: #1c3e2a;
+  border-color: #1d6429;
+}
+
+/* Tabla de TETRA LEAGUE */
+table {
+  background-color: #2F3242;  
+  border-collapse: separate; 
+  border-spacing: 0;
+  border: none; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  margin: 20px auto;
+  width: auto;
+}
+th {
+  background-color: #232530;
+  color: #8CAAEE;
+  padding: 15px;
+}
+td {
+  padding: 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+}
+table img {
+  width: 60px; 
+  height: auto;
+  display: block;
+  margin: 0 auto;  
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.5));
+}
+td:hover {
+  background-color: #363949;
+  cursor: pointer;
+}
+td:hover img {
+  transform: scale(1.2) rotate(-5deg);
+}
