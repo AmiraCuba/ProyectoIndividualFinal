@@ -40,6 +40,9 @@
   margin-top: -20px;
   display: block;
   padding: 20px 0;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #00ffff;
   z-index: 0;
 }
 .nav_botones ul {
@@ -48,11 +51,35 @@
   list-style-type: none;
   gap: 20px;
   padding: 10px 20px;
-  background: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid #00ffff;
 }
 .nav_botones a {
+  color: #0ff;
+  text-decoration: none;
+  background-color: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  font-family: TETRIO;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  padding: 12px 25px;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+}
+.nav_botones a:hover {
+    background-color: rgba(0, 255, 255, 0.2);
+    color: #ffffff;
+    border-color: #0ff;
+    box-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.6), 
+        0 0 20px rgba(0, 255, 255, 0.4), 
+        inset 0 0 5px rgba(0, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+.nav_botones button {
     color: #0ff;
     text-decoration: none;
     background-color: rgba(0, 255, 255, 0.05);
@@ -69,7 +96,7 @@
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
 }
-.nav_botones a:hover {
+.nav_botones button:hover {
     background-color: rgba(0, 255, 255, 0.2);
     color: #ffffff;
     border-color: #0ff;
@@ -78,6 +105,7 @@
         0 0 20px rgba(0, 255, 255, 0.4), 
         inset 0 0 5px rgba(0, 255, 255, 0.2);
     transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .tituloPrincipal {
@@ -256,8 +284,8 @@ article, form {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 article > p {
-  line-height: 1.6; /* Más espacio entre líneas facilita la lectura */
-  color: #c4c9d4; /* Un blanco no tan puro para no cansar la vista */
+  line-height: 1.6;
+  color: #c4c9d4;
   font-size: 1.4rem;
 }
 hr {
@@ -442,4 +470,105 @@ td:hover {
 }
 td:hover img {
   transform: scale(1.2) rotate(-5deg);
+}
+
+/* Estilo para buscador GUIAS */
+#buscadorGuias {
+  display: flex;
+  width: 60%;
+  margin: 10px auto;
+  padding: 12px 20px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  background-color: rgba(73, 73, 73, 0.204);
+  color: white;
+  font-size: 1.1rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#buscadorGuias:focus {
+  background-color: rgba(0, 255, 255, 0.171);
+  border-color: #0ff;
+  outline: none;  
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transform: scale(1.01);
+}
+
+/* Estilo para header de GUIAS */
+.headerGuias {
+  background-color: rgba(29, 33, 44, 0.85);;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  margin: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+.contenedorGuias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0px;
+  margin: 10px;
+}
+.contenedorGuias h3 {
+  color: #0ff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.contenedorGuias p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #c4c9d4;
+}
+.itemContenedorGuias {
+  background-color: rgba(30, 33, 45, 0.6);;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.itemContenedorGuias:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.3);
+}
+.etiqueta {
+  display: inline-block;
+  background-color: rgba(0, 255, 255, 0.1); 
+  color: #00ffff; 
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 8px;
+}
+.botonVerGuia {
+  font-size: 0.9rem;
+  font-family: 'Gill Sans MT';
+  background-color: #0ff;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.botonVerGuia:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* DOM cambios */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
 }

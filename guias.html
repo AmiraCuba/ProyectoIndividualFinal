@@ -24,51 +24,154 @@
             <h1>TUTORIALES Y GUÍAS</h1>
             <p>Aprende desde los fundamentos hasta las técnicas más avanzadas. Todo lo que necesitas para dominar TETR.IO</p>
         </section>
+        <!-- Navegador único dentro de la página -->
+        <nav class="nav_botones">
+            <input type="text" placeholder="Buscar guía..." id = "buscadorGuias">
+            <ul>
+                <li><button id="btnGuiasGenerales">Todas las guías</button></li>
+                <li><button id="btnGuiasPrincipiante">principiante</button></li>
+                <li><button id="btnGuiasIntermedio">intermedio</button></li>
+                <li><button id="btnGuiasAvanzado">avanzado</button></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="header">
-            <h2>Princiante</h2>
-            <p>Fundamentos esenciales para comenzar tu viaje en TETR.IO</p>
-        </div>
-        <article>
-            <h3>Controles y configuración</h3>
-            <p>Aprende a configurar tus controles de forma óptima y ajusta tu DAS, ARR y otros parámetros para máxima eficiencia.</p>
-            <p>⏱️10 min   📖Lectura</p>
-            <span class="etiqueta">Configuración</span>
-            <span class="etiqueta">DAS/ARR</span>
-            <span class="etiqueta">Controles</span>
-            <button class="botonVerGuia">Ver guía</button>
-        </article>
-        <article>
-            <h3>Mecánicas Básicas</h3>
-            <p>Entiende el sistema de rotación SRS, hold, queue y todas las mecánicas fundamentales del Tetris moderno.</p>
-            <p>⏱️15 min   🎮Interactivo</p>
-            <span class="etiqueta">SRS</span>
-            <span class="etiqueta">Fundamentos</span>
-            <span class="etiqueta">Piezas</span>
-            <button class="botonVerGuia">Ver guía</button>
-            <button class="botonGuardar">Guardar</button>
-        </article>
-        <article>
-            <h3>Stacking Eficiente</h3>
-            <p>Técnicas básicas de apilamiento, cómo mantener tu campo limpio y evitar errores comunes de principiantes.</p>
-            <p>⏱️20 min   📖Lectura</p>
-            <span class="etiqueta">Stacking</span>
-            <span class="etiqueta">Fundamentos</span>
-            <span class="etiqueta">Limpieza</span>
-            <button class="botonVerGuia">Ver guía</button>
-            <button class="botonGuardar">Guardar</button>
-        </article> 
-        <article>
-            <h3>Tu Primer Opener: TKI</h3>
-            <p>Aprende el TKI (T-Spin Triple Kombo Inicio), el opener más popular y fácil de aprender para principiantes.</p>
-            <p>⏱️25 min   🎮Interactivo</p>
-            <span class="etiqueta">TKI</span>
-            <span class="etiqueta">Opener</span>
-            <span class="etiqueta">T-Spin</span>
-            <button class="botonVerGuia">Ver guía</button>
-            <button class="botonGuardar">Guardar</button>
-        </article> 
+        <section id = "guiasPrincipiantes">
+            <br>
+            <div class="headerGuias">
+                <h2>Principiante</h2>
+                <p>Fundamentos esenciales para comenzar tu viaje en TETR.IO</p>
+            </div>
+            <div class = "contenedorGuias">
+                <article class="itemContenedorGuias">
+                    <h3>Controles y configuración</h3>
+                    <p>Aprende a configurar tus controles de forma óptima y ajusta tu DAS, ARR y otros parámetros para máxima eficiencia.</p>
+                    <p>⏱️10 min   📖Lectura</p>
+                    <span class="etiqueta">Configuración</span>
+                    <span class="etiqueta">DAS/ARR</span>
+                    <span class="etiqueta">Controles</span>
+                    <a href="" class="botonVerGuia">Ver guía</a>
+                </article>
+                <article class="itemContenedorGuias">
+                    <h3>Mecánicas Básicas</h3>
+                    <p>Entiende el sistema de rotación SRS, hold, queue y todas las mecánicas fundamentales del Tetris moderno.</p>
+                    <p>⏱️15 min   🎮Interactivo</p>
+                    <span class="etiqueta">SRS</span>
+                    <span class="etiqueta">Fundamentos</span>
+                    <span class="etiqueta">Piezas</span>
+                    <a href="" class="botonVerGuia">Ver guía</a>
+                </article>
+                <article class="itemContenedorGuias">
+                    <h3>Stacking Eficiente</h3>
+                    <p>Técnicas básicas de apilamiento, cómo mantener tu campo limpio y evitar errores comunes de principiantes.</p>
+                    <p>⏱️20 min   📖Lectura</p>
+                    <span class="etiqueta">Stacking</span>
+                    <span class="etiqueta">Fundamentos</span>
+                    <span class="etiqueta">Limpieza</span>
+                    <a href="" class="botonVerGuia">Ver guía</a>
+                </article> 
+                <article class="itemContenedorGuias">
+                    <h3>Tu Primer Opener: TKI</h3>
+                    <p>Aprende el TKI (T-Spin Triple Kombo Inicio), el opener más popular y fácil de aprender para principiantes.</p>
+                    <p>⏱️25 min   🎮Interactivo</p>
+                    <span class="etiqueta">TKI</span>
+                    <span class="etiqueta">Opener</span>
+                    <span class="etiqueta">T-Spin</span>
+                    <a href="" class="botonVerGuia">Ver guía</a>
+                </article> 
+            </div>
+        </section>
+        <section id = "guiasIntermedias">
+            <br>
+            <div class="headerGuias">
+                <h2>Intermedio</h2>
+                <p>Mejora tu juego con técnicas avanzadas y estrategias competitivas</p>
+            </div>
+            <div class = "contenedorGuias">
+                <article class="itemContenedorGuias">
+                    <h3>T-Spins y Setups</h3>
+                    <p>Domina los T-Spins singles, doubles y triples. Aprende los setups más comunes y cómo encadenarlos.</p>
+                    <p>⏱️35 min   🎮 Práctica</p>
+                    <span class="etiqueta">T-Spin</span>
+                    <span class="etiqueta">Setups</span>
+                    <span class="etiqueta">Combos</span>
+                    <a href="" class="botonVerGuia">Ver guía</a>
+                </article>
+                <article class="itemContenedorGuias">
+                    <h3>Finesse Perfecto</h3>
+                    <p>Optimiza cada movimiento. Aprende la cantidad mínima de teclas necesarias para colocar cada pieza en cada posición.</p>
+                    <p>⏱️30 min   📖Técnica</p>
+                    <span class="etiqueta">Finesse</span>
+                    <span class="etiqueta">Optimización</span>
+                    <span class="etiqueta">Velocidad</span>
+                    <button class="botonVerGuia">Ver guía</button>
+                </article>
+                <article class="itemContenedorGuias">
+                    <h3>Gestión de Garbage</h3>
+                    <p>Técnicas para defender contra garbage, counter timing y cómo convertir situaciones defensivas en ataques.</p>
+                    <p>⏱️25 min   🎮Estrategia</p>
+                    <span class="etiqueta">Garbage</span>
+                    <span class="etiqueta">Defensa</span>
+                    <span class="etiqueta">Counter</span>
+                    <button class="botonVerGuia">Ver guía</button>
+                </article> 
+                <article class="itemContenedorGuias">
+                    <h3>Openers Avanzados</h3>
+                    <p>Expande tu repertorio con DT Cannon, BT Cannon, MKO y otros openers competitivos importantes.</p>
+                    <p>⏱️40 min   📖Lectura</p>
+                    <span class="etiqueta">Openers</span>
+                    <span class="etiqueta">DT Cannon</span>
+                    <span class="etiqueta">Estrategia</span>
+                    <button class="botonVerGuia">Ver guía</button>
+                </article> 
+            </div>
+        </section>
+        <section id = "guiasAvanzadas">
+            <br>
+            <div class="headerGuias">
+                <h2>Avanzado</h2>
+                <p>Técnicas de alto nivel para competir en los rangos superiores</p>
+            </div>
+            <div class = "contenedorGuias">
+                <article class="itemContenedorGuias">
+                    <h3>Perfect Clears</h3>
+                    <p>Domina los Perfect Clears de 4 líneas y 6 líneas. Aprende patrones, probabilidades y cuándo ir por ellos.</p>
+                    <p>⏱️50 min   🎮 Avanzado</p>
+                    <span class="etiqueta">Perfect Clear</span>
+                    <span class="etiqueta">PC Loop</span>
+                    <span class="etiqueta">Patrones</span>
+                    <button class="botonVerGuia">Ver guía</button>
+                </article>
+                <article class="itemContenedorGuias">
+                    <h3>Downstacking Avanzado</h3>
+                    <p>Técnicas para limpiar situaciones caóticas y recuperarte de garbage pesado manteniendo el ataque.</p>
+                    <p>⏱️35 min   🎮Técnica</p>
+                    <span class="etiqueta">Downstack</span>
+                    <span class="etiqueta">Limpieza</span>
+                    <span class="etiqueta">Defensa</span>
+                    <button class="botonVerGuia">Ver guía</button>
+                </article>
+                <article class="itemContenedorGuias">
+                    <h3>Análisis de Matchups</h3>
+                    <p>Cómo adaptar tu estrategia según el estilo del oponente: speeders, defenders, PC players y más.</p>
+                    <p>⏱️30 min   📖Estrategia</p>
+                    <span class="etiqueta">Matchups</span>
+                    <span class="etiqueta">Meta</span>
+                    <span class="etiqueta">Adaptación</span>
+                    <button class="botonVerGuia">Ver guía</button>
+                </article> 
+                <article class="itemContenedorGuias">
+                    <h3>Midgame Optimization</h3>
+                    <p>Transiciones suaves del opener al midgame, manteniendo presión constante y eficiencia máxima.</p>
+                    <p>⏱️40 min   🎮Estrategia</p>
+                    <span class="etiqueta">Midgame</span>
+                    <span class="etiqueta">Transiciones</span>
+                    <span class="etiqueta">Flow</span>
+                    <button class="botonVerGuia">Ver guía</button>
+                </article> 
+            </div>
+        </section>
     </main>
+    <script src="JS/script.js"></script>
 </body>
 </html>
