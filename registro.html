@@ -25,10 +25,19 @@
             <h1>REGISTRO</h1>
             <p>Únete a la comunidad de TETR.IO Hub y mejora tu experiencia de juego</p>
         </section>
+        <!-- Navegador único dentro de la página -->
+        <nav class="nav_botones">
+            <ul>
+                <li><a href="#forms_personal">registro</a></li>
+                <li><a href="#forms_experiencia">experiencia</a></li>
+                <li><a href="#forms_preferencias">preferencias</a></li>
+                <li><a href="#forms_configuracion">configuración</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Creamos el formulario de registro -->
     <form action="#" method="post" class="contenedor">
-        <section class="forms">
+        <section class="forms" id = "forms_personal">
             <div class="forms_item">
                 <h2>Información personal</h2>
                 <hr>
@@ -82,7 +91,7 @@
                 </select>
             </div>
         </section>
-        <section class="forms">
+        <section class="forms" id = "forms_experiencia">
             <div class="forms_item">
                 <h2>Experiencia en TETR.IO</h2>
                 <hr>
@@ -127,10 +136,10 @@
             <div class="forms_item">
                 <label for="tiempojuego">Tiempo de juego semanal</label>
                 <input type="range" id="tiempojuego" name="tiempojuego" min="0" max="40" value="10">
-                <div id="playtime-value"># horas</div> <!-- JavaScript trabajo  -->
+                <div id="playtime-value"># horas</div>
             </div>
             </section>
-            <section class="forms">
+            <section class="forms" id = "forms_preferencias">
                 <div class="forms_item">
                     <h2>Preferencias de juego</h2>
                     <hr>
@@ -162,7 +171,7 @@
                     Estadísticas y Análisis</label>
                 </div>
             </section>
-            <section class="forms">
+            <section class="forms" id = "forms_configuracion">
                 <div class="forms_item">
                     <h2>Configuración</h2>
                     <hr>
@@ -186,7 +195,8 @@
             </section>
             <!-- Creamos el botón para suscribirse y reestablecer -->
         <button type="submit">Enviar</button>
-        <button type="submit">Resetear</button>
+        <button type="reset">Resetear</button>
     </form>
+    <script src="JS/script.js"></script>
 </body>
 </html>
