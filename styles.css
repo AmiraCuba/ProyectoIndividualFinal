@@ -767,3 +767,85 @@ td:hover img {
 html {
     scroll-behavior: smooth;
 }
+
+/* Media Queries para responsividad */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    /* NAVEGACIÓN */
+    .nav {
+        flex-direction: column;
+        align-items: center;   
+        padding: 10px;
+        position: relative; 
+    }
+    .nav ul {
+        flex-direction: column; 
+        gap: 15px;         
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .nav img {
+        width: 150px;
+    }
+
+    /* TEXTOS Y TÍTULOS */
+    .tituloPrincipal h1 {
+        font-size: 2.5rem;
+    }
+    .tituloPrincipal p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* GRID DE GUÍAS Y TIPOS DE JUEGO  */
+    .contenedorGuias, 
+    section.grid-container {
+        grid-template-columns: 1fr;
+    }
+    section {
+        flex-direction: column;
+    }
+  
+    .itemContenedorGuias, .itemTorneos, .forms_item {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* BOTONES DE FILTRO */
+    .nav_botones ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav_botones button, .nav_botones input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    /* FORMULARIO DE CONTACTO */
+    .forms {
+        width: 95%;
+        padding: 15px;
+    }
+    input, select, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /*TABLA DE ADMIN*/
+    #panelMensajes div {
+        overflow-x: auto;
+    } 
+    table {
+        min-width: 600px;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
