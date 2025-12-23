@@ -37,13 +37,14 @@
 
 /* Agregamos las rasgos a nav_botones */
 .nav_botones {
-  margin-top: -20px;
   display: block;
   padding: 20px 0;
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid #00ffff;
-  z-index: 0;
+  z-index: 900;
+  position: sticky;
+  top: 0;
 }
 .nav_botones ul {
   justify-content: center;
@@ -52,7 +53,7 @@
   gap: 20px;
   padding: 10px 20px;
 }
-.nav_botones a {
+.nav_botones a{
   color: #0ff;
   text-decoration: none;
   background-color: rgba(0, 255, 255, 0.05);
@@ -62,7 +63,7 @@
   letter-spacing: 1px;
   font-size: 1.4rem;
   padding: 12px 25px;
-  min-width: 150px;
+  min-width: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,6 +493,8 @@ td:hover img {
 
 /* Estilo para header de GUIAS */
 .headerGuias {
+  display: flex;
+  align-items: center;
   background-color: rgba(29, 33, 44, 0.85);;
   padding: 25px;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -499,6 +502,11 @@ td:hover img {
   border-radius: 15px;
   margin: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+.headerGuias img {
+  width: 90px;
+  display: flex;
+  margin-right: 20px;
 }
 .contenedorGuias {
   display: grid;
