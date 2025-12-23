@@ -28,11 +28,154 @@
     <!-- Navegador único dentro de la página -->
     <nav class="nav_botones">
         <ul>
-            <li><a href="#forms_personal">registro</a></li>
-            <li><a href="#forms_experiencia">experiencia</a></li>
-            <li><a href="#forms_preferencias">preferencias</a></li>
-            <li><a href="#forms_configuracion">configuración</a></li>
+            <li><button id = "btnTodosTorneos">todos los torneos</button></li>
+            <li><button id = "btnWorldChampionship">world championship</button></li>
+            <li><button id = "btnTorneosPasados">torneos pasados</button></li>
+            <li><button id = "btnTorneosFuturos">torneos futuros</button></li>
         </ul>
     </nav>
+    <main>
+        <section class="estadisticasTorneos">
+            <div class="estadistica">
+                <h4>500+</h4>
+                <p>Torneos organizados</p>
+            </div>
+            <div class="estadistica">
+                <h4>24</h4>
+                <p>Torneos activados</p>
+            </div>
+            <div class="estadistica">
+                <h4>3.2K</h4>
+                <p>Jugadores participantes</p>
+            </div>
+            <div class="estadistica">
+                <h4>$20K+</h4>
+                <p>Premios otorgados</p>
+            </div>
+        </section>
+        <section id="worldChampionship">
+            <div class="headerWorldChampionship">
+                <img src="imgs/torneos_logos/logo_world_championship.png" alt="Logo de World Championship">
+                <div>
+                    <h2>world championship 2025</h2>
+                    <p>El <strong>Campeonato Mundial TETR.IO 2025</strong> fue un circuito abierto que se celebró a lo largo de 2025. Tras competir en 86 torneos entre los mejores de la comunidad TETR.IO, los 64 mejores jugadores lucharon valientemente por el título de <strong>CAMPEÓN MUNDIAL DE TETR.IO.</strong></p>
+                    <span class = "etiquetaWD">📅 Desde el 32 de Enero hasta el 4 de Octubre</span>
+                    <span class = "etiquetaWD">👥 64 jugadores</span>
+                    <span class = "etiquetaWD">🎮 FT11 Bo3, FT11 Bo5 y demás</span>
+                    <span class = "etiquetaWD">🌍 Mundial</span>
+                </div>
+                <a href="https://worlds.tetr.io/#home" id = "btnVerWorldChampionship" target="_blank">Ver torneo</a>
+            </div>
+        </section>
+        <section class="torneosPasados">
+            <div class="headerTorneos">
+                <h2>Torneos pasados</h2>
+                <p>Mira los torneos pasados y obtén información sobre ellos.</p>
+            </div>
+            <article class = "itemTorneos">
+                <img src="imgs/torneos_logos/logo_european.png" alt="Logo de European TETR.IO Monthly">
+                <h3>European TETR.IO Monthly 24</h3>
+                <p class = "fechaTorneo">📅 07/12/2025</p>
+                <p>European TETR.IO Monthly (ETM) 24 es la vigésimo cuarta edición de European TETR.IO Monthly, una serie mensual para TETR.IO sin límite mínimo ni máximo de clasificación.</p>
+                <div>
+                    <span class="etiqueta">👥 59 participantes</span>
+                    <span class="etiqueta">💰 $170 USD</span>
+                    <span class="etiqueta">📚 ETM series</span>
+                    <span class="etiqueta">🎮 Tetra League y FT7</span>
+                    <span class="etiqueta">🌍 Europa</span>
+                </div>
+                <a href="https://matcherino.com/t/etm24" class="btnVerTorneo" target="_blank">Ver torneo</a>
+            </article>
+            <article class = "itemTorneos">
+                <img src="imgs/torneos_logos/logo_european.png" alt="Logo de European TETR.IO Monthly">
+                <h3>European TETR.IO Monthly 23</h3>
+                <p class = "fechaTorneo">📅 16/11/2025</p>
+                <p>European TETR.IO Monthly (ETM) 23 es la vigésimo tercera edición de European TETR.IO Monthly, una serie mensual para TETR.IO sin límite mínimo ni máximo de clasificación.</p>
+                <div>
+                    <span class="etiqueta">👥 49 participantes</span>
+                    <span class="etiqueta">💰 $123 USD</span>
+                    <span class="etiqueta">📚 ETM series</span>
+                    <span class="etiqueta">🎮 Tetra League y FT7</span>
+                    <span class="etiqueta">🌍 Europa</span>
+                </div>
+                <a href="https://matcherino.com/t/etm23" class="btnVerTorneo" target="_blank">Ver torneo</a>
+            </article>
+            <article class = "itemTorneos">
+                <img src="imgs/torneos_logos/logo_european.png" alt="Logo de European TETR.IO Monthly">
+                <h3>European TETR.IO Monthly 22</h3>
+                <p class = "fechaTorneo">📅 26/10/2025</p>
+                <p>European TETR.IO Monthly (ETM) 22 es la vigésimo segunda edición de European TETR.IO Monthly, una serie mensual para TETR.IO sin límite mínimo ni máximo de clasificación.</p>
+                <div>
+                    <span class="etiqueta">👥 61 participantes</span>
+                    <span class="etiqueta">💰 $136 USD</span>
+                    <span class="etiqueta">📚 ETM series</span>
+                    <span class="etiqueta">🎮 Tetra League y FT7</span>
+                    <span class="etiqueta">🌍 Europa</span>
+                </div>
+                <a href="https://matcherino.com/t/etm22" class="btnVerTorneo" target="_blank">Ver torneo</a>
+            </article>
+            <article class = "itemTorneos">
+                <img src="imgs/torneos_logos/logo_Hummingbird_Nest.png" alt="Logo de Hummingbird Nest">
+                <h3>Radiant 160</h3>
+                <p class = "fechaTorneo">📅 24/10/2025</p>
+                <p>Radiant 160 fue la 160.ª iteración de Radiant, una serie semanal para TETR.IO con un rango mínimo de U.</p>
+                <div>
+                    <span class="etiqueta">👥 12 participantes</span>
+                    <span class="etiqueta">💰 $TBA USD</span>
+                    <span class="etiqueta">📚 Radiant series</span>
+                    <span class="etiqueta">🎮 Eliminación doble</span>
+                    <span class="etiqueta">🌍 Mundial</span>
+                </div>
+                <a href="https://challonge.com/Radiant160" class="btnVerTorneo" target="_blank">Ver torneo</a>
+            </article>
+            <article class = "itemTorneos">
+                <img src="imgs/torneos_logos/logo_Hummingbird_Nest.png" alt="Logo de Hummingbird Nest">
+                <h3>Radiant 159</h3>
+                <p class = "fechaTorneo">📅 17/10/2025</p>
+                <p>Radiant 159 fue la 159.ª iteración de Radiant, una serie semanal para TETR.IO con un rango mínimo de U.</p>
+                <div>
+                    <span class="etiqueta">👥 11 participantes</span>
+                    <span class="etiqueta">💰 $TBA USD</span>
+                    <span class="etiqueta">📚 Radiant series</span>
+                    <span class="etiqueta">🎮 Eliminación doble</span>
+                    <span class="etiqueta">🌍 Mundial</span>
+                </div>
+                <a href="https://challonge.com/es/Radiant159" class="btnVerTorneo" target="_blank">Ver torneo</a>
+            </article>
+            <article class = "itemTorneos">
+                <img src="imgs/torneos_logos/logo_Hummingbird_Nest.png" alt="Logo de Hummingbird Nest">
+                <h3>Stratosphere 152</h3>
+                <p class = "fechaTorneo">📅 19/10/2025</p>
+                <p>Stratosphere 152 fue la 152.ª iteración de Stratosphere, una serie semanal para TETR.IO con un rango mínimo de U.</p>
+                <div>
+                    <span class="etiqueta">👥 7 participantes</span>
+                    <span class="etiqueta">💰 $TBA USD</span>
+                    <span class="etiqueta">📚 Stratosphere series</span>
+                    <span class="etiqueta">🎮 Eliminación doble</span>
+                    <span class="etiqueta">🌍 Mundial</span>
+                </div>
+                <a href="https://challonge.com/es/Stratosphere152" class="btnVerTorneo" target="_blank">Ver torneo</a>
+            </article>
+        </section>
+        <section class="torneosFuturos">
+            <div class="headerTorneos">
+                <h2>Torneos a futuro</h2>
+                <p>Participa en torneos futuros y mejora tu juego con técnicas avanzadas y estrategias competitivas.</p>
+            </div>
+            <article class = "itemTorneos">
+                <img src="imgs/torneos_logos/logo_Collegiate_Tetris_League.png" alt="Logo de Collegiate Tetris League">
+                <h3>Collegiate Tetris League 2026</h3>
+                <p class = "fechaTorneo">📅 01/02/2026 - 23/03/2026</p>
+                <p>La Collegiate Tetris League (CTL) 2026 es una serie de torneos dirigida a estudiantes de educación superior de Canadá y Estados Unidos. La CTL es un evento colaborativo entre la UBCEA (Asociación de Deportes Electrónicos de la Universidad de Columbia Británica) y varios organizadores de torneos modernos de Tetris en línea.</p>
+                <div>
+                    <span class="etiqueta">👥 En registro</span>
+                    <span class="etiqueta">💰 Monto a definir</span>
+                    <span class="etiqueta">📚 Collegiate Tetris League series</span>
+                    <span class="etiqueta">🎮 5v5 team battle</span>
+                    <span class="etiqueta">🌍 Canada y EEUU</span>
+                </div>
+                <a href="https://liquipedia.net/tetris/Collegiate_Tetris_League/2026" class="btnVerTorneo" target="_blank">Ver torneo</a>
+            </article>
+        </section>
 </body>
 </html>
